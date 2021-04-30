@@ -1,0 +1,81 @@
+<!-- <html>
+
+<head>
+    <title>Book My Show</title>
+
+</head>
+
+
+<body>
+    <script src="/main.js"></script>
+
+    <h1>Task sheet</h1>
+
+  <form action="/tasks" method="POST">
+    <input type="text" placeholder="name" name="name"/>
+    <input type="text" placeholder="task" name="task"/>
+    <button type="submit">Submit</button>
+  </form>
+
+  <ul class="tasks">
+    <% for(var i=0;i<tasks.length;i++) { %>
+      <li>
+          <span><% tasks[i].name %></span>
+          <span><% tasks[i].task %></span>
+      </li>
+  <% } %>
+    
+  </ul>
+
+  <div>
+      <h2>Update the tasks here</h2>
+      <p>Click to update</p>
+      <button id="update-button">Replace/Update</button>
+  </div>
+
+</body>
+
+
+</html> -->
+
+<html>
+
+<head>
+    <title>Book My Show</title>
+
+</head>
+
+
+<body>
+
+    <script src="/main.js"></script>
+
+    <h1>Task sheet</h1>
+
+  <form action="/tasks" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="task" name="task">
+    <button type="submit">Submit</button>
+  </form>
+
+<ul class="tasks">
+  <% for(var i=0;i<tasks.length;i++) { %>
+    <li>
+        <span><%=tasks[i].name %></span>
+        <span><%=tasks[i].task %></span>
+    </li>
+<% } %>
+  
+</ul>
+
+<div>
+    <h2>Update the tasks here</h2>
+
+    <p>click to update</p>
+
+    <button id='update-button'>Replace/Update</button>
+
+</body>
+
+
+</html>
